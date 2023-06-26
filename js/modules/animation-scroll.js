@@ -1,4 +1,4 @@
-export default class initAnimationScroll {
+export default class AnimationScroll {
   constructor(sections) {
     this.sections = document.querySelectorAll(sections);
     this.halfWindow = window.innerHeight * 0.6;
@@ -21,5 +21,7 @@ export default class initAnimationScroll {
   init() {
     this.scrollAnimation();
     window.addEventListener("scroll", this.scrollAnimation);
+
+    return this
   }
 }
