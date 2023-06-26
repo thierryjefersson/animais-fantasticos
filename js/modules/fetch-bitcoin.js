@@ -1,4 +1,5 @@
 export default function initFetchBitcoin() {
+  console.log("teste");
   async function fetchBitcoin() {
     try {
       const btcResponse = await fetch("https://blockchain.info/ticker");
