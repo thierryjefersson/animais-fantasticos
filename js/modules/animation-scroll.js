@@ -38,7 +38,6 @@ export default class AnimationScroll {
       this.checkDistance();
       window.addEventListener("scroll", this.checkDistance);
     }
-
     return this;
   }
 
