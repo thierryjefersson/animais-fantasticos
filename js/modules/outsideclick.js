@@ -3,7 +3,6 @@ export default function outsideClick(element, events, callback) {
   const outside = "data-outside";
 
   function handleOutsideClick(event) {
-    console.log(event.target);
     if (!element.contains(event.target)) {
       element.removeAttribute(outside);
       events.forEach((userEvent) => {
