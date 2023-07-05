@@ -9,6 +9,7 @@ import Funcionamento from "./modules/funcionamento.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import valorBitcoin from "./modules/fetch-bitcoin.js";
 import AnimationScroll from "./modules/animation-scroll.js";
+import SlideNav from "./modules/slide.js";
 
 const scrollSmooth = new ScrollSmooth('[data-menu="smooth"] a[href^="#"]');
 scrollSmooth.init();
@@ -46,3 +47,7 @@ funcionamento.init();
 
 fetchAnimais("./json/animaisapi.json", ".numeros-grid");
 valorBitcoin("https://blockchain.info/ticker", ".btc-preco");
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+slide.addControl(".custom-controls");
