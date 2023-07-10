@@ -26,7 +26,7 @@ export default class Funcionamento {
   }
 
   ativaAberto() {
-    if (this.estaAberto) this.funcionamento.classList.add(this.activeClass);
+    if (this.estaAberto()) this.funcionamento.classList.add(this.activeClass);
   }
 
   init() {
